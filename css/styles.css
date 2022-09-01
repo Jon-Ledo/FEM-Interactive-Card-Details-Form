@@ -25,12 +25,26 @@ body {
   background-image: url(../assets/images/bg-main-desktop.png);
   background-repeat: no-repeat;
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
 }
 
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* FOOTER */
 footer {
   margin-top: auto;
   padding: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
