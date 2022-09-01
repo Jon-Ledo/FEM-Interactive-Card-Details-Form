@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -11,26 +11,29 @@
 </head>
 <body>
   <div class="wrapper">
-    <section class="images-container">
-      <article class="background-img">
-        <div class="card-container">
-          <p class="card-number">
-            0000 0000 0000 0000
-          </p>
-          <div class="card-details">
-            <p class="card-name">
-              Jane Appleseed
+    <section class="cards-container">
+      <article class="card-front">
+        <div class="card-front-flex-container">
+          <div class="card-logo">
+            <img src="./assets/images/card-logo.svg" alt="card logo">
+          </div>
+          <div>
+            <p class="card-number">
+              0000 0000 0000 0000
             </p>
-            <p class="card-dates">
-              00/00
-            </p>
+            <div class="card-front-lower-details">
+              <p class="card-name">
+                Jane Appleseed
+              </p>
+              <p class="card-dates">
+                00/00
+              </p>
+            </div>
           </div>
         </div>
       </article>
-      <article>
-        <div class="card-back">
+      <article class="card-back">
           <p class="card-security">000</p>
-        </div>
       </article>
     </section>
 
@@ -54,8 +57,8 @@
       </form>
     </main>
     <!-- Completed state start -->
-    <section>
-      <div class="card-container modal">
+    <section class="modal">
+      <div class="card-container">
         <p>Thank you!</p>
         <p>We've added your card details</p>
         <button type="button">Continue</button>
