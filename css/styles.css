@@ -20,11 +20,21 @@
   -webkit-box-sizing: border-box; 
   box-sizing: border-box; 
 }
+/* remove arrows on inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 body {
   background-image: url(../assets/images/bg-main-desktop.png);
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 30% 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,6 +42,7 @@ body {
   font-family: var(--font-style);
   font-weight: var(--font-bold);
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -77,7 +88,6 @@ body {
 .card-front-lower-details {
   display: flex;
   justify-content: space-between;
-  text-transform: uppercase;
 }
 
 /* BACK */
@@ -87,7 +97,7 @@ body {
   height: 245px;
   position: relative;
   align-self: flex-end;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .card-security {
@@ -95,6 +105,46 @@ body {
   color: var(--white);
   top: 45%;
   right: 12%;
+}
+
+/* FORM */
+form {
+  padding: 5px;
+  color: var(--veryDarkViolet);
+  max-width: 447px;
+  font-size: 16px;
+}
+
+input {
+  margin: 10px 0 30px;
+  width: 100%;
+  color: var(--darkGrayishViolet);
+  font-size: 18px;
+  padding: 10px 0 8px 15px;
+  border: 2px solid var(--lightGrayishViolet);
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+.form-lower-details {
+  display: flex;
+}
+
+.input-dates {
+  width: 50%;
+}
+
+.input-width {
+  width: 45%;
+}
+
+input[type=submit] {
+  background-color: var(--veryDarkViolet);
+  color: var(--white);
+  padding: 15px;
+  border: none;
+  font-family: var(--font-style);
+  cursor: pointer;
 }
 
 /* MODAL */
