@@ -45,12 +45,18 @@
         <label for="form-card-number">Card Number</label><br>
         <input type="number" placeholder="e.g. 1234 5678 9123 0000" required><br>
 
-        <label for="form-card-date">Exp. Date (MM/YY)</label><br>
-        <input type="text" placeholder="MM" maxlength="2" required>
-        <input type="text" placeholder="YY" maxlength="2" required>
-
-        <label for="form-card-cvc">CVC</label>
-        <input type="text" placeholder="e.g. 123" maxlength="3" required>
+        <div class="form-lower-details">
+          <div class="input-dates">
+            <label for="form-card-date">Exp. Date (MM/YY)</label><br>
+            <input class="input-width" type="text" placeholder="MM" maxlength="2" required>
+            <input class="input-width" type="text" placeholder="YY" maxlength="2" required>
+          </div>
+          
+          <div class="input-cvc">
+            <label for="form-card-cvc">CVC</label><br>
+            <input type="text" placeholder="e.g. 123" maxlength="3" required>
+          </div>
+        </div>
 
         <br>
         <input type="submit" value="Confirm" >
