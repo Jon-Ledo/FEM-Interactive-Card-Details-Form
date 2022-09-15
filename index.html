@@ -26,7 +26,9 @@
                 Jane Appleseed
               </p>
               <p class="card-dates">
-                00/00
+                <span class="card-date__month">00</span>
+                /
+                <span class="card-date__year">00</span>
               </p>
             </div>
           </div>
@@ -40,21 +42,21 @@
     <main>
       <form>
         <label for="form-name">Cardholder Name</label><br>
-        <input type="text" placeholder="e.g. Jane Appleseed" required><br>
+        <input class="form-input__name" type="text" placeholder="e.g. Jane Appleseed" required><br>
 
         <label for="form-card-number">Card Number</label><br>
-        <input type="number" placeholder="e.g. 1234 5678 9123 0000" required><br>
+        <input class="form-input__card-number" type="number" placeholder="e.g. 1234 5678 9123 0000" required><br>
 
         <div class="form-lower-details">
           <div class="input-dates">
             <label for="form-card-date">Exp. Date (MM/YY)</label><br>
-            <input class="input-width" type="text" placeholder="MM" maxlength="2" required>
-            <input class="input-width" type="text" placeholder="YY" maxlength="2" required>
+            <input class="input-width input-date__month" type="text" placeholder="MM" maxlength="2" required>
+            <input class="input-width input-date__year" type="text" placeholder="YY" maxlength="2" required>
           </div>
           
           <div class="input-cvc">
             <label for="form-card-cvc">CVC</label><br>
-            <input type="text" placeholder="e.g. 123" maxlength="3" required>
+            <input class="form-input__cvc" type="text" placeholder="e.g. 123" maxlength="3" required>
           </div>
         </div>
 
