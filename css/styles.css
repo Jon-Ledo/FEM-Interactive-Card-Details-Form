@@ -8,6 +8,7 @@
   --lightGrayishViolet: hsl(270, 3%, 87%);
   --darkGrayishViolet: hsl(279, 6%, 55%);
   --veryDarkViolet: hsl(278, 68%, 11%);
+  --darkViolet: hsl(278, 38%, 25%);
   /* Typography */
   --font-body: 18px;
   --font-style: 'Space Grotesk',sans-serif;
@@ -145,6 +146,10 @@ input[type=submit] {
   border: none;
   font-family: var(--font-style);
   cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--darkViolet);
 }
 
 /* MODAL */
